@@ -4,8 +4,8 @@ function longestPalindrome(s) {
     let start = 0;
     let length = 0;
 
-    // Helper function to check palindromes centered at a specific point
-    
+    // Helper function to check palindromes centered at a specific points
+
     function palindromeChecker(left, right) {
         while (left >= 0 && right < s.length && s[left] === s[right]) {
             left--;
@@ -19,7 +19,7 @@ function longestPalindrome(s) {
         }
     }
 
-    // Loop over each character in the string, checking for palindromes
+    // Loop over each character in the string, checking for palindrome
 
     for (let i = 0; i < s.length; i++) {
         palindromeChecker(i, i);             // Odd-length palindrome
@@ -33,3 +33,4 @@ console.log(longestPalindrome("abcde"));       //a
 console.log(longestPalindrome("babad"));      //bab or aba
 console.log(longestPalindrome("cbbd"));      //bb
 console.log(longestPalindrome("a"));        //a
+console.log(longestPalindrome("b"));       //b
