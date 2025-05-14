@@ -11,7 +11,7 @@ function longestPalindrome(s) {
             left--;
             right++;
         }
-        // Update the starting index and length if we find a Longer palindrome
+        // Update the starting index and length if we find a longer palindrome
 
         if (right - left - 1 > length) {
             start = left + 1;
