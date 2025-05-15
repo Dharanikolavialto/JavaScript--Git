@@ -1,2 +1,0 @@
-# JavaScript--Git
-JavaScript Programs!!
